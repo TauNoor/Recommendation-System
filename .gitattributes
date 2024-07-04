@@ -1,3 +1,5 @@
 *.csv filter=lfs diff=lfs merge=lfs -text
 movies.csv filter=lfs diff=lfs merge=lfs -text
 ratings.csv filter=lfs diff=lfs merge=lfs -text
+Rec_System/movies.csv filter=lfs diff=lfs merge=lfs -text
+Rec_System/ratings.csv filter=lfs diff=lfs merge=lfs -text
