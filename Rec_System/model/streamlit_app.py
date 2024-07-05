@@ -7,18 +7,18 @@ from sklearn.metrics.pairwise import cosine_similarity
 import re
 from functions import search, suggested_lst, model
 
-file_name = "movies.csv"
-file_name2 = "ratings.csv"
+#file_name = "movies.csv"
+#file_name2 = "ratings.csv"
 
-movies = pd.read_csv(
+'''movies = pd.read_csv(
     os.path.abspath(file_name)
 )
 users = pd.read_csv(
     os.path.abspath(file_name2)
-)
+)'''
 
-#movies = pd.read_csv('../Rec_System/movies.csv')
-#users = pd.read_csv('../Rec_System/ratings.csv')
+movies = pd.read_csv('Recommendation-System/Rec_System/movies.csv')
+users = pd.read_csv('Recommendation-System/Rec_System/ratings.csv')
 
 movies['mod_title']= movies['title'].apply(lambda x: x[:x.find('(')])
 
