@@ -8,6 +8,10 @@ import re
 from functions import search, suggested_lst, model
 
 data_fp = os.path.join("..", "Rec_System")
+
+abs_data_fp = os.path.abspath(data_fp)
+print(f"Absolute path: {abs_data_fp}")
+
 files = os.listdir(data_fp)
 
 movies = pd.read_csv(
