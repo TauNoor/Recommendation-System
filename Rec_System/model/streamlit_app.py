@@ -7,10 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import re
 from functions import search, suggested_lst, model
 
-data_fp = os.path.join("..", "Rec_System")
-
-abs_data_fp = os.path.abspath(data_fp)
-print(f"Absolute path: {abs_data_fp}")
+data_fp = os.path.join("Rec_System")
 
 files = os.listdir(data_fp)
 
