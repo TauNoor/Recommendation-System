@@ -6,15 +6,14 @@ from sklearn.metrics.pairwise import cosine_similarity
 import re
 import os 
 
-data_fp = os.path.join("Rec_System")
-
-files = os.listdir(data_fp)
+file_name = "movies.csv"
+file_name2 = "ratings.csv"
 
 movies = pd.read_csv(
-    os.path.join(data_fp, files[-2])
+    os.path.abspath(file_name)
 )
 users = pd.read_csv(
-    os.path.join(data_fp, files[-1])
+    os.path.abspath(file_name2)
 )
 
 #movies = pd.read_csv('../Rec_System/movies.csv')
