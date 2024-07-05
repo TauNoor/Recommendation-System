@@ -6,16 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import re
 import os 
 
-file_name = "movies.csv"
-file_name2 = "ratings.csv"
-
-'''movies = pd.read_csv(
-    os.path.abspath(file_name)
-)
-users = pd.read_csv(
-    os.path.abspath(file_name2)
-)'''
-
+#Make sure to adjust the path files when downloading the repository to your local environment
 movies = pd.read_csv('../Rec_System/movies.csv')
 users = pd.read_csv('../Rec_System/ratings.csv')
 
