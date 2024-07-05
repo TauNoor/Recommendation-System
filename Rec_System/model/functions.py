@@ -16,8 +16,8 @@ users = pd.read_csv(
     os.path.abspath(file_name2)
 )'''
 
-movies = pd.read_csv('movies.csv')
-users = pd.read_csv('ratings.csv')
+movies = pd.read_csv('../Rec_System/movies.csv')
+users = pd.read_csv('../Rec_System/ratings.csv')
 
 movies['mod_title']= movies['title'].apply(lambda x: x[:x.find('(')])
 
