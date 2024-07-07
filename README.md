@@ -1,5 +1,5 @@
 # Recommendation-System
-This system makes movie recommendations based on an algorithm similar to KNN. 
+This system makes movie recommendations based on an algorithm that looks to perform clustering.
 
 ## Recommendation Algorithm Description
 The algorithm takes your inputted movie and finds other users who liked the same movie as you. We check what other movies those users liked and select them as our preliminary list of suggested movies. We proceed to filter it further using the similarness in the genres, ratings and popularity of the movies.
